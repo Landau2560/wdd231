@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/logo.svg" alt="site logo" width="60" height="60">
+            <span>Landau Grandberry</span>
+        </div>
+        <button id="menu" aria-label="Toggle navigation"></button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="main-grid">
+            <section class="card">
+                <h2>About me</h2>
+                <p>
+                    My name is Landau Grandberry. I have been studying computer programming at BYU since January 2025.
+                    Currently I am taking Web Fronted Development and learning how to create responsive, accessible, and dynamic websites
+                    using HTML, CSS, and Javascript.
+                </p>
+            </section>
+
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <img src="images/Student Photo.jpg" alt="Student placeholder image" width="250" height="250">
+            </section>
+        </div>
+
+        <section class="card certificate">
+            <h2>Web and Computer Programing Certificate</h2>
+
+            <div class="filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <p class="credits">
+                Total Credits: <span id="total-credits">0</span>
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social">
+            <a href="https://github.com/" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span>Landau Grandberry | Phoenix, AZ</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

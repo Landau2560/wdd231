@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #1f2937;
+    background-color: #f8fafc;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    background-color: #111827;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #f59e0b;
+    color: #111827;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #1e3a5f;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: .75rem;
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.photo-card img {
+    max-width: 250px;
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.filters button {
+    padding: .75rem;
+    border: none;
+    background-color: #111827;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.filters button:hover {
+    background-color: #f59e0b;
+    color: #111827;
+}
+
+#course-list {
+    display: grid;
+    gap: .75rem;
+    padding: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.course-card.completed {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.credits {
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 .5rem;
+}
