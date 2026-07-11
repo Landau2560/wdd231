@@ -1,0 +1,100 @@
+@media screen and (min-width: 700px) {
+    .header-content {
+        display: flex;
+        min-height: 86px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    #primary-navigation {
+        display: block;
+        margin-top: 0;
+    }
+
+    .navigation {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.35rem;
+    }
+
+    .navigation a {
+        padding: 0.75rem 0.9rem;
+    }
+
+    .page-heading {
+        padding: 5rem 2rem;
+    }
+
+    .directory-section {
+        padding: 3rem 2rem 4rem;
+    }
+
+    .directory-toolbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .view-buttons {
+        display: flex;
+        width: auto;
+    }
+
+    .member-directory.grid-view {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .list-view .member-information {
+        grid-template-columns: 
+            minmax(160px, 1.4fr)
+            minmax(160px, 1.5fr)
+            minmax(120px, 1fr)
+            minmax(150px, 1fr);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .list-view .membership-badge {
+        justify-self: start;
+    }
+
+    .footer-content {
+        grid-template-columns: 1.2fr, 1fr, 1.3fr;
+        align-items: start;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .footer-development {
+        text-align: right;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .member-directory.grid-view {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .navigation a {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}

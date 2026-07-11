@@ -1,0 +1,95 @@
+{
+    "members": [
+        {
+            "name": "Miss Jenna's Flowers",
+            "address": "1222 East Camelback Road",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-0133",
+            "website": "https://Example.com/Miss-jenna",
+            "image": "MissJennasFlowers.svg",
+            "membershiplevel": 3,
+            "category":"Retail",
+            "tagline":"Flowers inspired by the AZ desert"
+        },
+        {
+            "name": "Trunk State Credit Union",
+            "address": "310 West Phoenix Ave",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-0189",
+            "website": "https://Example.com/Trunk-stateCU",
+            "image": "TrunkStateCU.svg",
+            "membershiplevel": 3,
+            "category": "Financial Service",
+            "tagline": "Local money service for AZ families"
+        },
+        {
+            "name": "Groundbreaker Tech",
+            "address": "2333 Brodey St",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-0144",
+            "website": "https://Example.com/GBtech",
+            "image": "groundbreaktech.svg",
+            "membershiplevel": 2,
+            "category": "Technology",
+            "tagline": "Tech support for growing business"
+        },
+        {
+            "name": "Sunrise Cafe",
+            "address": "432 Thomas Rd",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-4444",
+            "website": "https://Example.com/Sunrise-cafe",
+            "image": "SunriseCafe.svg",
+            "membershiplevel": 1,
+            "category": "Dining",
+            "tagline": "Best Pretzels in AZ"
+        },
+        {
+            "name": "Three Homes Realty",
+            "address": "7663 W Thomas Rd",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-6556",
+            "website": "https://Example.com/3-homes-realty",
+            "image": "3HomesRealty.svg",
+            "membershiplevel": 1,
+            "category": "Real Estate",
+            "tagline": "Helping residents find their home in phoenix"
+        },
+        {
+            "name": "Southwest Family Health",
+            "address": "2776 W Dobson Rd",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-2322",
+            "website":"https://Example.com/Southwest-Family",
+            "image": "SouthwestFamilyHealth.svg",
+            "membershiplevel": 3,
+            "category": "Healthcare",
+            "tagline": "Healthcare for the whole family"
+        },
+        {
+            "name": "OE Art Collective",
+            "address": "8776 Dobson Rd",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85401",
+            "phone": "(602) 555-9933",
+            "website": "https://Example.com/OE-art",
+            "image": "OEArtCollective.svg",
+            "membershiplevel": 1,
+            "category": "Art and culture",
+            "tagline": "Supporting local artist in Az"
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore businesses and organizations that belong to Phoenix Chamber of Commerce."
+    >
+
+    <meta name="author" content="Landau Grandberry">
+
+    <title>Business Directory | Phoenix Chamber of Commerce</title>
+    
+    <link
+        rel="icon"
+        href="images/favicon-az.ico"
+    >
+
+    <meta
+        property="og:title"
+        content="Phoenix Chamber of Commerce Business Directory"
+    >
+
+    <meta
+        property="og:description"
+        content="Discover local Phoenix businesses, services, and community organizations."
+    >
+
+    <meta
+        property="og:image"
+        content="https://Landau2560.github.io/wdd231/chamber/images/social.preview.webp"
+    >
+
+    <meta
+        property="og:url"
+        content="https://Landau2560.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img
+                    src="images/Phx-logo.svg"
+                    alt="Phoenix Chamber of Commerce Logo"
+                    width="70"
+                    height="70"
+                >
+
+                <div class="brand-text">
+                    <span class="brand-text">Phoenix</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </a>
+
+            <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            >
+                <span aria-hidden="true">=</span>
+            </button>
+            
+            <nav id="primary-navigation" aria-label="Main-navigation">
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="directory.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+                </ul>
+                    
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">Support Local Businesses</p>
+            <h1>Buisness Directory</h1>
+
+            <p>
+                Explore businesses and organizations that strengthen the Phoenix community.
+            </p>
+        </section>
+
+        <section
+            class="directory-section"
+            aria-labelledby="directory-heading"
+        >
+            <div class="directory-toolbar">
+                <div>
+                    <h2 id="directory-heading">Chamber Members</h2>
+
+                    <p id="member-count" aria-live="polite">
+                        Loading chamber members...
+                    </p>
+                </div>
+
+                <div 
+                class="view-buttons"
+                role="group"
+                aria-label="Choose directory layout"
+            >
+            <button
+                id="grid-button"
+                class="view-button active-view"
+                type="button"
+                aria-label="Display members in a grid"
+                aria-pressed="true"
+            >
+                <span aria-hidden="true">=</span>
+                Grid
+            </button>
+
+                <button
+                    id="list-button"
+                    class="view-button"
+                    type="button"
+                    aria-label="Display members in a list"
+                    aria-pressed="false"
+                >
+                    <span aria-hidden="true">=</span>
+                    List
+                    </button>
+                </div>
+            </div>
+
+            <div
+                id="member-directory"
+                class="member-directory grid-view"
+                aria-live="polite"
+            ></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="footer-contact">
+                <h2>Phoenix Chamber of Commerce</h2>
+
+                <address>
+                    100 North South Avenue<br>
+                    Phoenix, Arizona 85004
+                </address>
+
+                <p>
+                    <a href="mailto:info@phoenixchamber.example">
+                        info@phoenixchamber.example
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+16025551230">
+                        (602) 555-0123
+                    </a>
+                </p>
+            </section>
+
+            <nav
+                class="social-links"
+                aria-label="Social media links"
+            >
+                <a 
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Youtube page"
+                > 
+                    Youtube
+                </a>
+
+                <a
+                    href="https://www.Facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Facebook page"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our linkedin page"
+                >
+                    Linkedin
+                </a>
+            </nav>
+
+            <section class="footer-development">
+                <h2>Development Information</h2>
+
+                <p> WDD 231 Chamber Project</p>
+                <p>Landau Grandberry</p>
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Phoenix Chamber of Commerce
+                </p>
+
+                <p id="last-modified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
