@@ -85,6 +85,52 @@
     .social-links {
         justify-content: center;
     }
+
+    .home-hero {
+        min-height: 560px;
+    }
+
+    .home-hero > img {
+        min-height: 560px;
+    }
+
+    .hero-overlay {
+        padding: 2rem;
+    }
+
+    .home-information {
+        grid-template-columns: 1.35fr 1fr;
+        padding: 3rem 2rem;
+    }
+
+    .forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-section {
+        padding: 4rem 2rem;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .join-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        text-align: left;
+    }
+
+    .join-banner > div {
+        max-width: 760px;
+    }
+
+    .join-banner .cta-button {
+        flex-shrink: 0;
+        margin-top: 0;
+    }
     
 }
 
@@ -96,5 +142,14 @@
     .navigation a {
         padding-right: 1.2rem;
         padding-left: 1.2rem;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .join-banner {
+        padding-right: max(2rem, calc((100% - 1200px) / 2));
+        padding-left: max(2rem, calc((100% - 1200px) / 2));
     }
 }

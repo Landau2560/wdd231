@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore businesses and organizations that belong to Phoenix Chamber of Commerce."
+    >
+
+    <meta name="author" content="Landau Grandberry">
+
+    <title>Business Directory | Phoenix Chamber of Commerce</title>
+    
+    <link
+        rel="icon"
+        href="images/favicon-az.ico"
+    >
+
+    <meta
+        property="og:title"
+        content="Phoenix Chamber of Commerce Business Directory"
+    >
+
+    <meta
+        property="og:description"
+        content="Discover local Phoenix businesses, services, and community organizations."
+    >
+
+    <meta
+        property="og:image"
+        content="https://Landau2560.github.io/wdd231/chamber/images/social.preview.webp"
+    >
+
+    <meta
+        property="og:url"
+        content="https://Landau2560.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img
+                src="images/phoenix-logo.svg"
+                alt="Phoenix Chamber of Commerce Logo"
+                width="70"
+                height="70"
+                >
+
+                <div class="brand-text">
+                    <span class="brand-name">Phoenix</span>
+                    <span class="brand-subtitle">
+                        Chamber of Commerce
+                    </span>
+                </div>
+            </a>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                >
+                =
+            </button>
+
+            <nav
+                id="primary-navigation"
+                aria-label="Main-navigation"
+            >
+                <ul class="navigation">
+                    <li>
+                        <a 
+                            class="active"
+                            href="index.html"
+                            aria-current="page"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">
+                            Discover
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">
+                            Join
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-hero">
+            <img
+                src="images/hero-phoenix.webp"
+                alt="Phoenix Mountains"
+                width="1600"
+                height="700"
+            >
+
+            <div class="hero-overlay">
+                <p class="hero-eyebrow">
+                    Grow. Connect. Prosper
+                </p>
+
+                <h1>Phoenix Chamber of Commerce</h1>
+
+                <p>
+                    Strengthening local businesses, supporting our community, and helping Phoenix thrive.
+                </p>
+
+                <a class="cta-button" href="join.html">
+                    Join the Chamber
+                </a>
+            </div>
+        </section>
+
+        <section
+            class="home-information"
+            aria-label="Community events and weather"
+        >
+            <article class="home-card events-card">
+                <h2>Current Events</h2>
+
+                    <div class="event">
+                        <div class="event-date">
+                        <span>22</span>
+                        JUL
+                    </div>
+
+                    <div class="event-details">
+                        <h3>Business Networking Breakfast</h3>
+
+                        <p>
+                            Join local business owners for breakfast, networking, and community updates.
+                        </p>
+
+                        <p>
+                            <strong>Time:</strong>
+                            8:00AM
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Phoenix Community Center
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-date">
+                        <span>29</span>
+                        JUL
+                    </div>
+
+                    <div class="event-details">
+                        <h3>Digital Marketing Workshop</h3>
+
+                        <p>
+                            Learn practical marketing strategies for growing your business online.
+                        </p>
+
+                        <p>
+                            <strong>Time:</strong>
+                            1:00PM
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Chamber Conference Room
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-date">
+                        <span>5</span>
+                        AUG
+                    </div>
+
+                    <div class="event-details">
+                        <h3>Community Business Expo</h3>
+
+                        <p>
+                            Discover local products, services, and networking opportunities.
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Phoenix Community Center
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="home-card weather-card">
+                <h2>Current Weather</h2>
+
+                <div
+                    id="current-weather"
+                    aria-live="polite"
+                >
+                    <p>Loading weather...</p>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div
+                id="weather-forecast"
+                class="forecast-container"
+                aria-live="polite"
+                >
+                    <p>Loading Forecast...</p>
+                </div>
+            </article>
+        </section>
+
+        <section
+            class="spotlight-section"
+            aria-labelledby="spotlight-heading"
+        >
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    Featured Members
+                </p>
+
+                <h2 id="spotlight-heading">
+                    Business Spotlights
+                </h2>
+
+                <p>
+                    Discover some of the Silver and Gold chamber members helping the Phoenix business community grow.
+                </p>
+            </div>
+
+            <div
+                id="spotlight-container"
+                class="spotlight-container"
+                aria-live="polite"
+            >
+                <p>Loading member spotlights...</p>
+            </div>
+        </section>
+
+        <section class="join-banner">
+            <div>
+                <h2>Grow Your Business With Us</h2>
+
+                <p>
+                    Connect with local leaders, attend valuble events, promote your business, and become part of the Phoenix Chamber of Commerce.
+                </p>
+            </div>
+
+            <a class="cta-button" href="join.html">
+                Become a Member
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="footer-contact">
+                <h2>Phoenix Chamber of Commerce</h2>
+
+                <address>
+                    100 North South Avenue<br>
+                    Phoenix, Arizona 85004
+                </address>
+
+                <p>
+                    <a href="mailto:info@phoenixchamber.example">
+                        info@phoenixchamber.example
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+16025551230">
+                        (602) 555-0123
+                    </a>
+                </p>
+            </section>
+
+            <nav
+                class="social-links"
+                aria-label="Social media links"
+            >
+                <a 
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Youtube page"
+                > 
+                    Youtube
+                </a>
+
+                <a
+                    href="https://www.Facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Facebook page"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our linkedin page"
+                >
+                    Linkedin
+                </a>
+            </nav>
+
+            <section class="footer-development">
+                <h2>Development Information</h2>
+
+                <p> WDD 231 Chamber Project</p>
+                <p>Landau Grandberry</p>
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Phoenix Chamber of Commerce
+                </p>
+
+                <p id="last-modified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
